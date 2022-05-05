@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Modal, Stack, Form, Button, InputGroup } from "react-bootstrap";
-import { act } from "react-dom/cjs/react-dom-test-utils.production.min";
+//import { act } from "react-dom/cjs/react-dom-test-utils.production.min";
 import añadirProducto from "../functions/añadirProducto";
 import getNumeroFactura from "../functions/getNumeroFactura";
 import incrementarNumeroFactura from "../functions/incrementarNumeroFactura";
