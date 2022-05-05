@@ -4,7 +4,7 @@ import React from "react";
 
 import Admin from "./pages/Admin";
 import Index from "./pages/Index";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
