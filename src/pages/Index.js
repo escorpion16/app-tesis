@@ -1,15 +1,23 @@
 import React from "react";
 import getDeviceStatus from "../functions/getDeviceStatus";
 import styles from "../styles/index.module.css";
+import { useNavigate } from "react-router-dom";
 
 function Index() {
   const [inputValue, setInputValue] = React.useState("");
   const [estatus, setEstatus] = React.useState(undefined);
+  const navigate = useNavigate();
+  const login = () => {
+    navigate("/admin");
+  };
+
   return (
     <div className={styles.searchWrapper}>
       <div className={styles.header}>
         <h1>FIX MY PHONE</h1>
-        <button className={styles.btnSession}>Iniciar sesión</button>
+        <button className={styles.btnSession} onClick={login}>
+          Iniciar sesión
+        </button>
       </div>
       <h2 className={styles.title}>Estado:</h2>
       <div className={styles.buttonSearch}>
