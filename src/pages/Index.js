@@ -7,10 +7,11 @@ function Index() {
   const [estatus, setEstatus] = React.useState(undefined);
   return (
     <div className={styles.searchWrapper}>
-      <div className={styles.title}>
+      <div className={styles.header}>
         <h1>FIX MY PHONE</h1>
-        <h3>Estatus:</h3>
+        <button className={styles.btnSession}>Iniciar sesión</button>
       </div>
+      <h2 className={styles.title}>Estado:</h2>
       <div className={styles.buttonSearch}>
         <input
           type="text"
