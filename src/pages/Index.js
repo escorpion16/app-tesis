@@ -19,7 +19,7 @@ function Index() {
           Iniciar sesión
         </button>
       </div>
-      <h2 className={styles.title}>Estado:</h2>
+      <h2 className={styles.title}>Buscar estado de su equipo:</h2>
       <div className={styles.buttonSearch}>
         <input
           type="text"
@@ -37,17 +37,17 @@ function Index() {
       </div>
 
       {estatus === null && (
-        <p className={styles.messageError}>
+        <h3 className={styles.messageError}>
           No se encontró el dispositivo, pruebe con otra factura o id.
-        </p>
+        </h3>
       )}
       {(estatus !== null) & (estatus !== undefined) ? (
-        <p className={styles.message}>
+        <h3 className={styles.message}>
           {" "}
           El dispositivo <strong>{estatus.equipo}</strong> de{" "}
           <strong> {estatus.propietario}</strong>, se encuentra en la fase:{" "}
           <strong>{estatus.estado}</strong>
-        </p>
+        </h3>
       ) : null}
     </div>
   );
