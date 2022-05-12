@@ -55,7 +55,7 @@ function Home({ usuario }) {
         />
       )}
       <Stack direction="horizontal" className="justify-content-between">
-        <p style={{ fontSize: 24 }}>Bienvenido,{usuario?.email} </p>
+        <p style={{ fontSize: 24 }}>Bienvenido, {usuario?.email} </p>
         <Button onClick={signOut}>Cerrar sesión</Button>
       </Stack>
       <hr />
@@ -131,7 +131,7 @@ function Home({ usuario }) {
             ))}
         </tbody>
       </Table>
-      <Button onClick={añadirProductoHome}> Añadir Producto</Button>
+      <Button onClick={añadirProductoHome}>Añadir Equipo</Button>
     </Container>
   );
 }
